@@ -120,10 +120,10 @@ class ChatProcessor {
                                 }));
 
                                 if (messages.length > 0) {
-                                    // Находим самое раннее сообщение в диалоге
+                                    // Find the earliest message in the dialogue
                                     const timestamps = messages
                                         .map(msg => msg.timestamp)
-                                        .filter(ts => ts && ts > 946684800000); // Фильтруем некорректные даты (до 2000 года)
+                                        .filter(ts => ts && ts > 946684800000); // Filter incorrect dates (before 2000)
 
                                     const chatDate = timestamps.length > 0 
                                         ? new Date(Math.min(...timestamps))

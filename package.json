@@ -1,0 +1,16 @@
+{
+  "name": "cursorai-chat-reader",
+  "version": "1.0.0",
+  "description": "Read and analyze VSCode CursorAI chat backups",
+  "author": "Alexy-OS",
+  "repository": "https://github.com/alexy-os/cursorai-chat-reader",
+  "license": "MIT",
+  "main": "src/chat-processor.js",
+  "scripts": {
+    "start": "node src/chat-processor.js"
+  },
+  "dependencies": {
+    "natural": "^6.10.0",
+    "sqlite3": "^5.1.7"
+  }
+}
